@@ -14,7 +14,7 @@ Group:		Development/Python
 Url:		http://bitbucket.org/marcinkuzminski/vcs/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
-BuildRequires:	python-devel
+BuildRequires:	python-devel, python-setuptools
 
 %description
 vcs is a Python library that provides an abstraction layer over
