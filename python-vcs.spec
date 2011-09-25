@@ -1,14 +1,13 @@
 %define	module	vcs
 %define name	python-%{module}
-%define version	0.1.9
+%define version	0.2.1
 %define release	%mkrel 1
 
 Summary:	Version control system management abstraction layer for Python
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	%{module}-%{version}.tar.gz
-Patch0:		exclude-tests.patch
+Source0:	http://pypi.python.org/packages/source/v/%{module}/%{module}-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://bitbucket.org/marcinkuzminski/vcs/
@@ -22,7 +21,6 @@ various version control systems.
 
 %prep
 %setup -q -n %{module}-%{version}
-%patch0 -p0
  
 %install
 %__rm -rf %{buildroot}
