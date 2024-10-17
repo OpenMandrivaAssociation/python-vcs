@@ -10,7 +10,7 @@ Release:	%{release}
 Source0:	http://pypi.python.org/packages/source/v/%{module}/%{module}-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
-Url:		http://bitbucket.org/marcinkuzminski/vcs/
+Url:		https://bitbucket.org/marcinkuzminski/vcs/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 BuildRequires:	python-devel, python-setuptools
